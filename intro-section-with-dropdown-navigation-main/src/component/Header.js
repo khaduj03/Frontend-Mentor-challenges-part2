@@ -1,22 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-const Menu = () => (
-  <>
-    <p>
-      <a href="#">Features</a>
-    </p>
-    <p>
-      <a href="#"> Company</a>
-    </p>
-    <p>
-      <a href="#"> Careers</a>
-    </p>
-    <p>
-      <a href="#">About</a>
-    </p>
-  </>
-);
+import Menu from "./Menu";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -45,6 +29,7 @@ const Header = () => {
           <img src="images/icon-menu.svg" alt="" />
         </button>
       </div>
+
       {toggle && (
         <div className="w-screen lg:hidden fixed inset-0 h-screen bg-opacity-60 bg-black ">
           <motion.div
