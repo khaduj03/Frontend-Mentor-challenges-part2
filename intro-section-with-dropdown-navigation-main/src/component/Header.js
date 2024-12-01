@@ -18,10 +18,10 @@ const Header = () => {
       </div>
       <div className="lg:flex  hidden space-x-7 mr-20">
         <p>
-          <a href="#">Login</a>
+          <a href="#" className="text-gray-500 hover:text-black">Login</a>
         </p>
-        <p className="border w-24 h-10 border-black rounded-xl justify-center items-center flex relative bottom-1 ">
-          <a href="#">Ragister</a>
+        <p className="border w-24 h-10 border-gray-500 hover:border-black rounded-xl justify-center items-center flex relative bottom-1 ">
+          <a href="#" className="text-gray-500 hover:text-black">Ragister</a>
         </p>
       </div>
       <div className="lg:hidden">
@@ -36,8 +36,8 @@ const Header = () => {
             initial={{ x: "100%" }} // Start off-screen to the left
             animate={{ x: toggle ? 0 : "100%" }} // Slide in when open, slide out when closed
             exit={{ x: "100%" }} // Slide out when exiting
-            transition={{ type: "spring", stiffness: 300, damping: 30 }} // Smooth spring animation
-            className="fixed top-0 right-0 w-60 h-screen bg-white"
+            transition={{ type: "spring", stiffness: 250, damping: 30 }} // Smooth spring animation
+            className="fixed top-0 right-0 w-72 h-screen bg-white"
           >
             <button
               className="w-full h-16 flex p-10 justify-end items-center"
@@ -53,10 +53,10 @@ const Header = () => {
               <Menu />
             </nav>
             <div className="flex w-full justify-center items-center  flex-col space-y-3 ">
-              <p>
+              <p  className="text-gray-500 hover:text-black">
                 <a href="#">Login</a>
               </p>
-              <p className="border w-24 h-10 border-black rounded-xl justify-center items-center flex relative bottom-1 ">
+              <p className="border w-52 h-10 text-gray-500 hover:text-black border-black rounded-xl justify-center items-center flex relative bottom-1 ">
                 <a href="#">Ragister</a>
               </p>
             </div>
