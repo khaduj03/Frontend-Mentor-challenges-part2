@@ -39,7 +39,7 @@ Animations are handled using the motion component from Framer Motion, ensuring a
 
 ### Screenshots
 ![Design DeskTop ](./design/sreenshot-desktop.jpg)
-![Design ](./design/screenshot-mobile.jpg)
+![Design ](./design/screenshot-sm.jpg)
 
 ### Usage
 

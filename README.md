@@ -4,7 +4,7 @@ These challenges were part of my journey to improve my frontend development skil
 
 ### 1-coding-bootcamp-testimonials-slider-master
 ![Design DeskTop ](./design/sreenshot-desktop.jpg)
-![Design ](./design/screenshot-mobile.jpg)
+![Design ](./design/screenshot-sm.jpg)
 
 ### 2-intro-section-with-dropdown-navigation-main
 ![Design ](./design/screenshot.jpg)
