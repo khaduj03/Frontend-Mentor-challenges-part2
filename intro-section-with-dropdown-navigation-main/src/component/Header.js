@@ -33,10 +33,10 @@ const Header = () => {
       {toggle && (
         <div className="w-screen lg:hidden fixed inset-0 h-screen bg-opacity-60 bg-black ">
           <motion.div
-            initial={{ x: "100%" }} // Start off-screen to the left
-            animate={{ x: toggle ? 0 : "100%" }} // Slide in when open, slide out when closed
-            exit={{ x: "100%" }} // Slide out when exiting
-            transition={{ type: "spring", stiffness: 250, damping: 30 }} // Smooth spring animation
+            initial={{ x: "100%" }} 
+            animate={{ x: toggle ? 0 : "100%" }}
+            exit={{ x: "100%" }} 
+            transition={{ type: "spring", stiffness: 250, damping: 30 }} 
             className="fixed top-0 right-0 w-72 h-screen bg-white"
           >
             <button
