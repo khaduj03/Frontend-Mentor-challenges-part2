@@ -1,4 +1,4 @@
-### Challenges and Progress
+Challenges and Progress
 ### Overview
 These challenges were part of my journey to improve my frontend development skills. I worked on various UI components, interactive features, and layout designs to strengthen my understanding of HTML, CSS, JavaScript, React, and other web technologies.
 
@@ -10,3 +10,6 @@ These challenges were part of my journey to improve my frontend development skil
 ![Design ](./intro-section-with-dropdown-navigation-main/design/screenshot.jpg)
 ![mobile ](./intro-section-with-dropdown-navigation-main/design/screenshot-mobile.jpg)
 ![sidebar in mobile](./intro-section-with-dropdown-navigation-main/design/screenshot-mobile-sidebar.jpg)
+
+### 3- fylo-dark-theme-landing-page-master
+![Design](./fylo-dark-theme-landing-page-master/design/desktop-design.jpg)
