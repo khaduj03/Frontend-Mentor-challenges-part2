@@ -12,11 +12,11 @@ const Header = () => {
     <div className="w-screen h-14 flex justify-between p-8">
       <div className="flex flex-row space-x-10 lg:ml-6">
         <img className="w-20 h-8" src="/images/logo.svg" alt="logo" />
-        <nav className=" space-x-10 lg:flex hidden ">
+        <nav className=" hidden  space-x-10 lg:flex">
           <Menu />
         </nav>
       </div>
-      <div className="lg:flex  hidden space-x-7 mr-20">
+      <div className="lg:flex hidden  space-x-7 mr-20">
         <p>
           <a href="#" className="text-gray-500 hover:text-black">Login</a>
         </p>
