@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Features = () => {
   return (
     <div className="flex justify-center items-center w-full  bg-[#181f2b]">
-      <div className="grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-4 lg:w-8/12  ">
+      <div className="grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-4 lg:w-8/12   ">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{
@@ -18,7 +18,7 @@ const Features = () => {
           transition={{ duration: 1.5 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="flex flex-col justify-center h-64 p-2 items-center w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
+          <div className="flex flex-col justify-center h-64 p-2 items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-access-anywhere.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
               {" "}
@@ -44,7 +44,7 @@ const Features = () => {
           transition={{ duration: 1.5 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="flex flex-col justify-center h-64 p-2  items-center w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
+          <div className="flex flex-col justify-center h-64 p-2  items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-security.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
               {" "}
@@ -71,7 +71,7 @@ const Features = () => {
           transition={{ duration: 1.5 }}
           viewport={{ once: false, amount: 0.2 }} 
         >
-          <div className="flex flex-col justify-center h-64  items-center w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
+          <div className="flex flex-col justify-center h-64  items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-collaboration.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
               {" "}
@@ -97,7 +97,7 @@ const Features = () => {
           transition={{ duration: 1.5 }}
           viewport={{ once: false, amount: 0.2 }} 
         >
-          <div className="flex flex-col justify-center h-64  items-center w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
+          <div className="flex flex-col justify-center h-64  items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-any-file.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
               {" "}

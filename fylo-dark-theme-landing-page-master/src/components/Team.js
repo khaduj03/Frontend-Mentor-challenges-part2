@@ -62,6 +62,7 @@ const Team = () => {
           </a>
         </motion.div>
       </div>
+
       <div className="flex lg:flex-row flex-col  relative justify-center items-center space-y-2  lg:space-x-7">
         <img
           className="absolute z-10 lg:bottom-40 lg:left-10 left-3 bottom-[540px]"
@@ -80,7 +81,7 @@ const Team = () => {
           }}
           transition={{ duration: 1 }}
           viewport={{ once: false, amount: 0.2 }}
-          className="w-[380px] z-20 p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
+          className="lg:w-[380px] w-[320px] z-20 p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
         >
           <p>
             Fylo has improved our team productivity by an order of magnitude.
@@ -111,7 +112,7 @@ const Team = () => {
           }}
           transition={{ duration: 1 }}
           viewport={{ once: false, amount: 0.2 }}
-          className="w-[380px] z-20  p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
+          className="lg:w-[380px] w-[320px] z-20  p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
         >
           <p>
             Fylo has improved our team productivity by an order of magnitude.
@@ -142,7 +143,7 @@ const Team = () => {
           }}
           transition={{ duration: 1 }}
           viewport={{ once: false, amount: 0.2 }}
-          className="w-[380px] z-20 p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
+          className="lg:w-[380px] w-[320px] z-20 p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
         >
           <p>
             Fylo has improved our team productivity by an order of magnitude.

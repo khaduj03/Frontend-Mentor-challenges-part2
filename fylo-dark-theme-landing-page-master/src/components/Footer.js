@@ -41,7 +41,7 @@ const Footer = () => {
         }}
         transition={{ duration: 2 }}
         viewport={{ once: false, amount: 0.2 }}
-        className="flex justify-center items-center flex-col lg:absolute rounded-xl p-5  bg-[#202a3c]  w-[400px] lg:w-[750px] h-[320px] lg:h-[250px] lg:left-64 lg:bottom-64"
+        className="flex justify-center items-center flex-col lg:absolute rounded-xl p-5  bg-[#202a3c]  w-[350px] lg:w-[750px] h-[320px] lg:h-[250px] lg:left-64 lg:bottom-64"
       >
         <p className=" text-white text-3xl font-bold lg:mt-0 mt-4">
           Get early access today
@@ -59,7 +59,7 @@ const Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="example@fylo.com"
-                className="lg:w-[400px] w-[350px]  h-[40px] rounded-3xl outline-none p-4 mt-6 mr-5 "
+                className="lg:w-[400px] w-[330px]  h-[40px] rounded-3xl outline-none p-4 mt-6 mr-5 "
               />
               {errorMessage && (
                 <p className="text-xs text-red-500 ml-3 mt-2 ">
@@ -71,7 +71,7 @@ const Footer = () => {
               <input
                 type="submit"
                 value="Get Started For Free"
-                className="bg-gradient-to-r cursor-pointer relative z-20 from-[#95ede4] to-[#38e4d3] lg:w-40 w-[350px] h-10 text-xs    text-white font-bold rounded-3xl mt-2 lg:mt-6"
+                className="bg-gradient-to-r cursor-pointer relative z-20 from-[#95ede4] to-[#38e4d3] lg:w-40 w-[330px] h-10 text-xs    text-white font-bold rounded-3xl mt-2 lg:mt-6"
               />
             </label>
           </form>
