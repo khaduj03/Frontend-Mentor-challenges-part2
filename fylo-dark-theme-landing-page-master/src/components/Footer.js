@@ -78,18 +78,7 @@ const Footer = () => {
         </div>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        exit={{
-          opacity: 0,
-          y: -100,
-        }}
-        transition={{ duration: 2 }}
-        viewport={{ once: false, amount: 0.2 }}
+      <div
         className="flex flex-col lg:mt-0 mt-10 "
       >
         <img
@@ -109,20 +98,9 @@ const Footer = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: -100 }} 
-        whileInView={{
-          opacity: 1, 
-          y: 0, 
-        }}
-        exit={{
-          opacity: 0, 
-          y: -100, 
-        }}
-        transition={{ duration: 2 }}
-        viewport={{ once: false, amount: 0.2 }}
+      <div
         className="space-y-5 lg:ml-10 flex lg:mt-0 mt-10 mr-40 lg:mr-0 justify-center items-center flex-col"
       >
         <div className="flex space-x-7 mr-3 text-white">
@@ -132,20 +110,9 @@ const Footer = () => {
           <img className="w-5 h-5 " src="/images/icon-email.svg" alt="" />{" "}
           <p>example@fylo.com</p>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: -100 }} 
-        whileInView={{
-          opacity: 1, 
-          y: 0, 
-        }}
-        exit={{
-          opacity: 0, 
-          y: -100, 
-        }}
-        transition={{ duration: 2 }}
-        viewport={{ once: false, amount: 0.2 }}
+      <div
         className="text-white flex flex-col justify-center  lg:ml-20 mr-52 lg:mr-0 mt-3 lg:mt-0"
       >
         <p className="  text-white cursor-pointer hover:text-[#38e4d3]">
@@ -156,20 +123,9 @@ const Footer = () => {
           Press
         </p>
         <p className="  text-white cursor-pointer hover:text-[#38e4d3]">Blog</p>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        exit={{
-          opacity: 0,
-          y: -100,
-        }}
-        transition={{ duration: 2 }}
-        viewport={{ once: false, amount: 0.2 }}
+      <div
         className="flex flex-col  lg:ml-20 mr-52 lg:mr-0 mt-3 lg:mt-0"
       >
         <p className="  text-white cursor-pointer hover:text-[#38e4d3]">
@@ -181,20 +137,9 @@ const Footer = () => {
         <p className="  text-white cursor-pointer hover:text-[#38e4d3]">
           Privacy
         </p>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        exit={{
-          opacity: 0,
-          y: 100,
-        }}
-        transition={{ duration: 2 }}
-        viewport={{ once: false, amount: 0.2 }}
+      <div
         className="flex ml-10 justify-start items-start space-x-2"
       >
         <img
@@ -212,7 +157,7 @@ const Footer = () => {
           src="/images/instagram-167-svgrepo-com (1).svg"
           alt=""
         />
-      </motion.div>
+      </div>
     </div>
   );
 };
