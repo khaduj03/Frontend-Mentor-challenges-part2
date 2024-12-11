@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-         <p className="font-sans text-xs">
+    <p className="font-sans text-xs flex justify-center items-center">
       Challenge by <a 
       className="text-blue-400"
       href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
