@@ -5,10 +5,9 @@ import Main from "./components/Main";
 function App() {
   return (
     <div>
+      {/* Main Application Wrapper */}
       <Header />
-
       <Main />
-
       <Footer />
     </div>
   );
