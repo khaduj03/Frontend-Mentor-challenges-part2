@@ -1,93 +1,148 @@
-# Frontend Mentor - Social media dashboard with theme switcher
+# Social Media Dashboard
 
-![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
+## Overview
 
-## Welcome! 👋
+This project is a Social Media Dashboard built with React and Framer Motion. It features a dark mode toggle, responsive design, and dynamic cards showcasing statistics and insights for various social media platforms.
 
-Thanks for checking out this front-end coding challenge.
+---
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Screenshots
 
-**To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
+### Dashboard (Light Mode)
+![Descktop](./screenshot/screenshot2.png)
+![Descktop](./screenshot/screenshot%20mobile2.png)
 
-## The challenge
+### Dashboard (Dark Mode)
+![Descktop](./screenshot/screenshot.png)
+![Descktop](./screenshot/screenshot%20mobile.png)
 
-Your challenge is to build out this Social Media Dashboard and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-Your users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Toggle color theme to their preference
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
-## Where to find everything
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## Features
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- **Dark Mode**: Easily toggle between light and dark themes for a seamless user experience.
+- **Responsive Design**: Adaptable to various screen sizes, ensuring accessibility on mobile, tablet, and desktop devices.
+- **Interactive Animations**: Leveraging Framer Motion for smooth transitions and hover effects.
+- **Dynamic Data Rendering**: Social media data (followers, likes, views, etc.) is displayed dynamically using React props.
+- **Accessibility Enhancements**: Semantic HTML, ARIA roles, and keyboard navigation support.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+---
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## Technologies Used
 
-## Building your project
+- **React**: For component-based architecture and state management.
+- **Tailwind CSS**: For a utility-first CSS framework, enabling rapid UI development.
+- **Framer Motion**: For animations and interactive visual effects.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+---
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## Project Structure
 
-## Deploying your project
+```
+|-- src
+   |-- Components
+       |-- Card
+           |-- Card.js
+           |-- import.js
+       |-- DashboardHeader.js
+       |-- OverviewCard.js
+   |-- App.js
+|-- public
+|-- assets
+   |-- images
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+---
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+## Components
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### 1. **Card**
+   Displays individual social media platform data such as followers, username, and daily statistics.
 
-## Create a custom `README.md`
+   - Props:
+     - `platform`: Social media platform name.
+     - `username`: User’s handle.
+     - `count`: Total followers.
+     - `todayCount`: Daily follower change.
+     - `Icon`: Platform-specific icon.
+     - `color`: Gradient color for the header.
+     - `isNegative`: Boolean indicating if the daily change is negative.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### 2. **DashboardHeader**
+   Displays the total followers and a toggle button for dark mode.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+   - Props:
+     - `totalFollowers`: Total number of followers across all platforms.
+     - `toggleDarkMode`: Function to toggle between light and dark mode.
+     - `isDarkMode`: Boolean indicating the current theme state.
+     - `setIsDarkMode`: State setter function for dark mode.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### 3. **OverviewCard**
+   Displays daily performance metrics such as likes and views.
 
-## Submitting your solution
+   - Props:
+     - `title`: Metric name (e.g., "Likes").
+     - `platform`: Platform name.
+     - `value`: Metric value.
+     - `percentage`: Change percentage.
+     - `Icon`: Platform-specific icon.
+     - `isNegative`: Boolean indicating if the percentage change is negative.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+---
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## Setup Instructions
 
-## Sharing your solution
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/khaduj03/Frontend-Mentor-challenges-part2.git
+   ```
 
-There are multiple places you can share your solution:
+2. Navigate to the project directory:
+   ```bash
+   cd social-media-dashboard-with-theme-switcher-master
+   ```
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+5. Open the application in your browser at:
+   ```
+   http://localhost:3000
+   ```
 
-## Got feedback for us?
+---
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+---
 
-**Have fun building!** 🚀
+## Acknowledgments
+
+- Icons sourced from [Frontend Mentor Assets](https://www.frontendmentor.io/).
+- Animations powered by [Framer Motion](https://www.framer.com/motion/).
+- UI styled using [Tailwind CSS](https://tailwindcss.com/).
+
+---
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code.
+
+---
+
+## Contact
+
+- Developed by [khaduj](https://github.com/your-profile).
+- For inquiries, reach out to [khadijawakili268@gmail.com](khadijawakili268@gmail.com).
+
