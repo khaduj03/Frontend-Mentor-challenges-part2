@@ -144,5 +144,5 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 ## Contact
 
 - Developed by [khaduj](https://github.com/your-profile).
-- For inquiries, reach out to [khadijawakili268@gmail.com](khadijawakili268@gmail.com).
+- For inquiries, reach out to [khadijawakili652@gmail.com](khadijawakili652@gmail.com).
 
