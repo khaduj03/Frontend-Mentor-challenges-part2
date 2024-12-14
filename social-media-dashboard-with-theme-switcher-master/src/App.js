@@ -29,7 +29,7 @@ function App() {
 
   return (
     // Wrapper for the app with dynamic classes based on dark mode
-    <div className={`min-h-screen ${isDarkMode ? "bg-gray-800 text-gray-200 px-28 " : "bg-gray-100 text-gray-900 px-28 "}`}>
+    <div className={`min-h-screen ${isDarkMode ? "bg-gray-800 text-gray-200 lg:px-28 " : "bg-gray-100 text-gray-900 lg:px-28 "}`}>
       
       {/* Dashboard header with dark mode toggle */}
       <DashboardHeader
