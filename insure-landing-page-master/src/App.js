@@ -11,17 +11,17 @@ const App = () => {
       <Header/>
 
       {/* Hero Section */}
-      {/* <HeroSection/> */}
-        {/* <img 
-        className='absolute top-[90%]'
-        src="/images/bg-pattern-intro-left-desktop.svg" alt="" /> */}
+      <HeroSection/>
+        <img 
+        className='lg:absolute top-[90%] hidden '
+        src="/images/bg-pattern-intro-left-desktop.svg" alt="" />
       {/* Features Section */}
-        {/* <Features/> */}
+        <Features/>
 
 
 
       {/* Footer */}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };
