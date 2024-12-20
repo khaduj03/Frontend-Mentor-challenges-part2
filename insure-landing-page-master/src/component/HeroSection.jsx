@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className=' bg-[#2d2640] text-white flex relative p-5'>
+    <section className=' bg-[#2d2640] text-white flex relative p-5 pb-14'>
         <img 
         className='absolute  top-0 right-0 z-10'
         src="/images/bg-pattern-intro-right-desktop.svg" alt="" />
@@ -15,7 +15,7 @@ const HeroSection = () => {
 
         <div className='flex-1'>
             <img 
-            className='absolute top-10 right-10'
+            className='absolute top-24 right-10'
         src="/images/image-intro-desktop.jpg" alt="" /></div>
       
     </section>
