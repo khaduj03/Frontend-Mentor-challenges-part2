@@ -13,7 +13,7 @@ const App = () => {
       {/* Hero Section */}
       <HeroSection/>
         <img 
-        className='lg:absolute top-[90%] hidden '
+        className='lg:flex absolute top-[90%] hidden '
         src="/images/bg-pattern-intro-left-desktop.svg" alt="" />
       {/* Features Section */}
         <Features/>

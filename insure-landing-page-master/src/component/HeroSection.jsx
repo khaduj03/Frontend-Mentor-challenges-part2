@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const HeroSection = () => {
   return (
@@ -8,16 +8,14 @@ const HeroSection = () => {
     >
       {/* Background pattern for larger screens */}
       <img
-        className="lg:absolute top-0 right-0 z-10 hidden"
+        className="lg:flex absolute top-0 right-0 z-30 hidden"
         src="/images/bg-pattern-intro-right-desktop.svg"
         alt="Decorative background pattern"
         aria-hidden="true"
       />
 
       {/* Left Content Section */}
-      <div
-        className="lg:flex-1 flex justify-center items-center flex-col relative lg:pt-0 lg:pb-0 pb-14 pt-14 lg:p-12 p-3"
-      >
+      <div className="lg:flex-1 flex justify-center lg:items-start items-center flex-col relative lg:pt-0 lg:pb-0 pb-14 pt-14 lg:p-12 p-3">
         {/* Background pattern for mobile */}
         <img
           className="absolute top-0 left-0 lg:hidden"
@@ -50,15 +48,22 @@ const HeroSection = () => {
 
         {/* Call-to-Action Button */}
         <button
-          className="uppercase border mt-10 text-white border-white w-52 lg:px-10"
+          className="uppercase border mt-10 text-white border-white w-52 lg:px-10  
+             relative overflow-hidden group transition-all duration-300 ease-in-out"
           aria-label="View plans to find your life insurance coverage"
         >
-          View plans
+          <span
+            className="absolute inset-0 bg-white transition-transform duration-300 
+               transform translate-x-full group-hover:translate-x-0 z-0"
+          ></span>
+          <span className="relative z-10 text-white group-hover:text-[#2d2640] transition-colors duration-300">
+            View plans
+          </span>
         </button>
 
         {/* Decorative Mobile Background */}
         <img
-          className="absolute top-96 right-0"
+          className="lg:hidden absolute top-96 right-0"
           src="/images/bg-pattern-intro-right-mobile.svg"
           alt="Decorative background pattern"
           aria-hidden="true"

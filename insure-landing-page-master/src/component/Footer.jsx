@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -21,17 +21,33 @@ const Footer = () => {
       <div className="lg:w-[90%] border-b border-b-gray-400 justify-between flex lg:flex-row flex-col p-7">
         <img src="/images/logo.svg" alt="Insure Logo" />
         <div className="flex space-x-4 mt-5 lg:mt-0">
-          <a href="#" aria-label="Visit our Facebook page">
-            <img src="/images/icon-facebook.svg" alt="" />
+          <a
+            href="#"
+            aria-label="Visit our Facebook page"
+            className="transition-transform transform hover:scale-110 hover:opacity-80 duration-300 ease-in-out"
+          >
+            <img src="/images/icon-facebook.svg" alt="Facebook" />
           </a>
-          <a href="#" aria-label="Visit our Twitter page">
-            <img src="/images/icon-twitter.svg" alt="" />
+          <a
+            href="#"
+            aria-label="Visit our Twitter page"
+            className="transition-transform transform hover:scale-110 hover:opacity-80 duration-300 ease-in-out"
+          >
+            <img src="/images/icon-twitter.svg" alt="Twitter" />
           </a>
-          <a href="#" aria-label="Visit our Pinterest page">
-            <img src="/images/icon-pinterest.svg" alt="" />
+          <a
+            href="#"
+            aria-label="Visit our Pinterest page"
+            className="transition-transform transform hover:scale-110 hover:opacity-80 duration-300 ease-in-out"
+          >
+            <img src="/images/icon-pinterest.svg" alt="Pinterest" />
           </a>
-          <a href="#" aria-label="Visit our Instagram page">
-            <img src="/images/icon-instagram.svg" alt="" />
+          <a
+            href="#"
+            aria-label="Visit our Instagram page"
+            className="transition-transform transform hover:scale-110 hover:opacity-80 duration-300 ease-in-out"
+          >
+            <img src="/images/icon-instagram.svg" alt="Instagram" />
           </a>
         </div>
       </div>
@@ -39,7 +55,10 @@ const Footer = () => {
       {/* Navigation Links */}
       <div className="flex lg:flex-row flex-col items-center lg:space-y-0 space-y-5 lg:space-x-40 lg:items-start w-full lg:pl-20 mt-8">
         <div>
-          <h4 className="font-bold text-gray-400 tracking-wider" id="company-heading">
+          <h4
+            className="font-bold text-gray-400 tracking-wider"
+            id="company-heading"
+          >
             OUR COMPANY
           </h4>
           <ul
@@ -69,7 +88,10 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-gray-400 tracking-wider" id="help-heading">
+          <h4
+            className="font-bold text-gray-400 tracking-wider lg:text-start text-center"
+            id="help-heading"
+          >
             HELP ME
           </h4>
           <ul
@@ -99,7 +121,10 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-gray-400 tracking-wider" id="contact-heading">
+          <h4
+            className="font-bold text-gray-400 tracking-wider"
+            id="contact-heading"
+          >
             CONTACT
           </h4>
           <ul
@@ -124,7 +149,10 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-gray-400 tracking-wider" id="others-heading">
+          <h4
+            className="font-bold text-gray-400 tracking-wider"
+            id="others-heading"
+          >
             OTHERS
           </h4>
           <ul
