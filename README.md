@@ -18,3 +18,11 @@ These challenges were part of my journey to improve my frontend development skil
 ![DesckTop](./project-tracking-intro-component-master/screenshot/screenshot.png)
 ![Mobile](./project-tracking-intro-component-master/screenshot/screenshot%20mobile.png)
 ![Mobile](./project-tracking-intro-component-master/screenshot/screenshot%20mobile2.png)
+
+
+# 5-pricing-component-with-toggle-master
+![DesckTop](./pricing-component-with-toggle-master/screenshot/screenshot.png)
+
+# 6-insure-landing-page-master
+![DesckTop](./insure-landing-page-master/design/desktop-design.jpg)
+![mobile](./insure-landing-page-master/screenshot/screenshot-mobile.png)
