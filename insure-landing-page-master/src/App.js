@@ -12,13 +12,19 @@ const App = () => {
 
       {/* Hero Section */}
       <HeroSection/>
+      
+      {/* Decorative Background Image */}
+      <div className="relative">
         <img 
-        className='lg:flex absolute top-[90%] hidden '
-        src="/images/bg-pattern-intro-left-desktop.svg" alt="" />
+          className="lg:flex absolute top-[90%] hidden " 
+          src="/images/bg-pattern-intro-left-desktop.svg" 
+          alt="Decorative background pattern"
+          aria-hidden="true" 
+        />
+      </div>
+
       {/* Features Section */}
-        <Features/>
-
-
+      <Features/>
 
       {/* Footer */}
       <Footer/>

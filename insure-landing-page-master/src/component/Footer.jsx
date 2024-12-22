@@ -55,12 +55,9 @@ const Footer = () => {
       {/* Navigation Links */}
       <div className="flex lg:flex-row flex-col items-center lg:space-y-0 space-y-5 lg:space-x-40 lg:items-start w-full lg:pl-20 mt-8">
         <div>
-          <h4
-            className="font-bold text-gray-400 tracking-wider"
-            id="company-heading"
-          >
+          <h3 className="font-bold text-gray-400 tracking-wider" id="company-heading">
             OUR COMPANY
-          </h4>
+          </h3>
           <ul
             className="mt-4 uppercase tracking-wider lg:text-start text-center"
             aria-labelledby="company-heading"
@@ -88,12 +85,9 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4
-            className="font-bold text-gray-400 tracking-wider lg:text-start text-center"
-            id="help-heading"
-          >
+          <h3 className="font-bold text-gray-400 tracking-wider" id="help-heading">
             HELP ME
-          </h4>
+          </h3>
           <ul
             className="mt-4 uppercase tracking-wider lg:text-start text-center"
             aria-labelledby="help-heading"
@@ -121,12 +115,9 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4
-            className="font-bold text-gray-400 tracking-wider"
-            id="contact-heading"
-          >
+          <h3 className="font-bold text-gray-400 tracking-wider" id="contact-heading">
             CONTACT
-          </h4>
+          </h3>
           <ul
             className="mt-4 uppercase tracking-wider lg:text-start text-center"
             aria-labelledby="contact-heading"
@@ -149,12 +140,9 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4
-            className="font-bold text-gray-400 tracking-wider"
-            id="others-heading"
-          >
+          <h3 className="font-bold text-gray-400 tracking-wider" id="others-heading">
             OTHERS
-          </h4>
+          </h3>
           <ul
             className="mt-4 uppercase tracking-wider lg:text-start text-center"
             aria-labelledby="others-heading"
