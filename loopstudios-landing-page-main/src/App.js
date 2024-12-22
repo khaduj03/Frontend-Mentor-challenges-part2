@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./component/Header";
+import HeroContent from "./component/HeroContent ";
+// import HeroSection from './component/HeroSection';
+// import Features from './component/Features';
+// import Footer from './component/Footer';
 
-function App() {
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-josefin justify-center flex flex-col">
+      {/* Header */}
+      <Header />
+
+      <div className="w-screen h-screen p-8 ">
+        <img
+          className="absolute lg:flex  hidden top-0 inset-0 -z-10"
+          src="/images/desktop/image-hero.jpg"
+          alt=""
+        />
+        <img
+          className="absolute flex  lg:hidden top-0 inset-0 -z-10"
+          src="/images/mobile/image-hero.jpg"
+          alt=""
+        />
+
+        <div className=" lg:w-[600px]  lg:ml-32 mt-14 p-8 border border-white">
+          <p className="lg:text-7xl text-5xl  font-thin uppercase text-white">
+            Immersive experiences that deliver
+          </p>
+        </div>
+      </div>
+
+      {/* Hero Section */}
+      <HeroContent />
+      {/* Features Section */}
+      {/* <Features/> */}
+
+      {/* Footer */}
+      {/* <Footer/> */}
     </div>
   );
-}
+};
 
 export default App;
