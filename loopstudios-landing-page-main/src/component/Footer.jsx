@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='bg-black flex lg:flex-row flex-col justify-between py-10' role="contentinfo">
+    <footer className='bg-black flex lg:flex-row flex-col justify-between py-2' role="contentinfo">
       <div>
         <img 
           src="/images/logo.svg" 
@@ -10,7 +10,7 @@ const Footer = () => {
           className=' py-6 px-20' 
         />
         <ul 
-          className='flex flex-col lg:flex-row lg:space-x-14 lg:items-start items-center lg:space-y-0 space-y-7 text-white py-10 px-20' 
+          className='flex flex-col lg:flex-row lg:space-x-14 lg:items-start items-center lg:space-y-0 space-y-7 text-white  px-20' 
           aria-label="Footer navigation"
         >
           <li><a href="#" aria-label="About Loopstudios">About</a></li>

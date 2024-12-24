@@ -1,26 +1,26 @@
 const HeroContent = () => {
   return (
     <section
-      className="flex flex-col relative items-center text-center px-6 py-12 lg:flex-row lg:text-left lg:px-20"
-      aria-labelledby="hero-heading"
+      className="flex flex-col relative items-center text-center px-6 lg:flex-row lg:text-left lg:px-20"
+      aria-labelledby="unique-hero-heading"
     >
       {/* Hero Image */}
       <div className="relative">
         <img
           className="-z-10"
           src="/images/desktop/image-interactive.jpg"
-          alt="Interactive VR Experience"
+          alt="Interactive VR experience"
         />
       </div>
 
       {/* Hero Content */}
       <div
-        className="lg:absolute flex flex-col p-24 justify-center items-center w-[550px] h-80 bg-white right-20 bottom-10"
+        className="lg:absolute flex flex-col p-24 justify-center items-center w-[550px] h-80 bg-white right-20 bottom-0"
         role="region"
-        aria-labelledby="hero-heading"
+        aria-labelledby="unique-hero-heading"
       >
         <h2
-          id="hero-heading"
+          id="unique-hero-heading"
           className="text-[44px] font-josefin p-6 leading-10 font-thin uppercase text-center"
         >
           The leader in interactive VR
