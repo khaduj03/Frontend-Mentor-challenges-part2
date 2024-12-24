@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./component/Header";
 import HeroContent from "./component/HeroContent ";
+import Creations from "./component/Creations";
 // import HeroSection from './component/HeroSection';
 // import Features from './component/Features';
 // import Footer from './component/Footer';
@@ -34,8 +35,9 @@ const App = () => {
 
       {/* Hero Section */}
       <HeroContent />
-      {/* Features Section */}
-      {/* <Features/> */}
+
+      {/* Creations Section */}
+      <Creations/>
 
       {/* Footer */}
       {/* <Footer/> */}
