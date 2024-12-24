@@ -15,7 +15,7 @@ const App = () => {
   {/* Hero Section */}
   <main>
   <section
-    className="w-screen lg:h-[450px] h-[600px] p-8"
+    className="w-screen lg:h-[600px] h-[600px] p-8"
     aria-labelledby="hero-title"
   >
     <h1 id="hero-title" className="sr-only">
