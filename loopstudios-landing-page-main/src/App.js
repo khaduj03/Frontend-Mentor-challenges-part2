@@ -1,11 +1,8 @@
 import React from "react";
 import Header from "./component/Header";
 import HeroContent from "./component/HeroContent ";
-import Creations from "./component/Creations";
-// import HeroSection from './component/HeroSection';
-// import Features from './component/Features';
-// import Footer from './component/Footer';
-
+import Footer from "./component/Footer"
+import Creations from "./component/Creations"
 
 const App = () => {
   
@@ -35,12 +32,12 @@ const App = () => {
 
       {/* Hero Section */}
       <HeroContent />
-
       {/* Creations Section */}
       <Creations/>
+   
 
       {/* Footer */}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };

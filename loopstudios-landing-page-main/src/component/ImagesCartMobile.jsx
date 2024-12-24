@@ -13,9 +13,13 @@ const Creations = () => {
         </h1>
         
         <div className='grid grid-cols-1 gap-6 lg:hidden'>
-        {images&& images.map((carts)=>(
-          <div>
-            <ImagesCartMobile url={carts.imgMobile} name={carts.name}/>
+        {images && images.map((carts, index) => (
+          <div key={index}>
+            <ImagesCartMobile 
+              url={carts.imgMobile} 
+              name={carts.name} 
+              altText={carts.name || 'Image description not available'}
+            />
           </div>
         ))}
         </div>
@@ -27,6 +31,7 @@ const Creations = () => {
           See All
         </button>
       </div>
+
       <div className='lg:grid grid-cols-4 lg:gap-7 hidden'>
         {images && images.map((item, index) => (
           <div key={index} role="img" aria-labelledby={`image-${index}`}>
