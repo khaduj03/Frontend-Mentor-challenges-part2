@@ -16,6 +16,19 @@ const Creations = () => {
           Our Creations
         </h1>
 
+              {/* Mobile Grid */}
+      <section className="grid grid-cols-1 gap-6 lg:hidden">
+        {images &&
+          images.map((cart, index) => (
+            <div key={index} className="relative" >
+              <img src={cart.imgMobile} alt={cart.name} />
+              <div className="text-center absolute inset-0 bg-black bg-opacity-40 flex items-end text-gray-700">
+                <p className="text-white p-3 w-32  uppercase text-xl font-thin">{cart.name}</p>
+              </div>
+            </div>
+          ))}
+      </section>
+
         <button
           className="border border-black p-2 lg:w-44 w-32 m-3 relative tracking-widest font-semibold uppercase"
           aria-label="See all creations"
@@ -24,35 +37,15 @@ const Creations = () => {
         </button>
       </header>
 
-      {/* Mobile Grid */}
-      <section className="grid grid-cols-1 gap-6 lg:hidden">
-        {images &&
-          images.map((cart, index) => (
-            <figure key={index}>
-              <img src={cart.imgMobile} alt={cart.name} />
-              <figcaption className="text-center text-gray-700">
-                {cart.name}
-              </figcaption>
-            </figure>
-          ))}
-      </section>
+
 
       {/* Desktop Grid */}
       <section className="lg:grid grid-cols-4 lg:gap-7 hidden">
         {images &&
           images.map((item, index) => (
-            <figure key={index}>
-              <img
-                src={item.img}
-                alt={item.name || "Image description not available"}
-              />
-              <figcaption
-                id={`image-${index}`}
-                className="text-center text-gray-700"
-              >
-                {item.name}
-              </figcaption>
-            </figure>
+            <div key={index}>
+              <ImageCart url={item.img} name={item.name}/>
+            </div>
           ))}
       </section>
     </div>

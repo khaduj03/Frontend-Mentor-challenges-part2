@@ -8,7 +8,7 @@ const Header = () => {
       className="flex justify-between lg:p-16 p-10 lg:px-32"
       role="banner"
     >
-      <div className="z-30">
+      <div className="z-50">
         <img src="/images/logo.svg" alt="Company Logo" />
       </div>
 
@@ -52,7 +52,7 @@ const Header = () => {
 
       {/* Hamburger Button */}
       <button
-        className="lg:hidden relative w-8 h-8 z-30"
+        className="lg:hidden relative w-8 h-8 z-50"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle navigation menu"
         aria-expanded={isMenuOpen ? "true" : "false"}
@@ -77,7 +77,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div
-          className="absolute w-screen h-screen inset-0 bg-black p-10 flex opacity-0 translate-y-4 transition-all duration-500 ease-in-out"
+          className="absolute w-screen h-screen z-40 inset-0 bg-black p-10 flex opacity-0 translate-y-4 transition-all duration-500 ease-in-out"
           style={{ animation: "fadeInSlideUp 0.5s forwards" }}
           role="dialog"
           aria-hidden={isMenuOpen ? "false" : "true"}

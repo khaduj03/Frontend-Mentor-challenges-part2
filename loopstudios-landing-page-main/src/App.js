@@ -15,7 +15,7 @@ const App = () => {
   {/* Hero Section */}
   <main>
   <section
-    className="w-screen h-screen p-8"
+    className="w-screen lg:h-[450px] h-[600px] p-8"
     aria-labelledby="hero-title"
   >
     <h1 id="hero-title" className="sr-only">
@@ -26,6 +26,7 @@ const App = () => {
       src="/images/desktop/image-hero.jpg"
       alt="Hero desktop background"
     />
+    
     <img
       className="absolute flex lg:hidden top-0 inset-0 -z-10"
       src="/images/mobile/image-hero.jpg"
@@ -37,6 +38,8 @@ const App = () => {
       </p>
     </div>
   </section>
+
+  <HeroContent/>
 
   {/* Creations Section */}
   <Creations />

@@ -21,7 +21,7 @@ const HeroContent = () => {
       >
         <h2
           id="unique-hero-heading"
-          className="text-[44px] font-josefin p-6 leading-10 font-thin uppercase text-center"
+          className="lg:text-[44px] text-3xl  font-josefin p-6 leading-10 font-thin uppercase text-center"
         >
           The leader in interactive VR
         </h2>
