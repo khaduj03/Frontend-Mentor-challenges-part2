@@ -24,7 +24,7 @@ const App = () => {
         />
 
         <div className=" lg:w-[600px]  lg:ml-32 mt-14 p-8 border border-white">
-          <p className="lg:text-7xl text-5xl  font-thin uppercase text-white">
+          <p className="lg:text-7xl text-4xl  font-thin uppercase text-white">
             Immersive experiences that deliver
           </p>
         </div>
@@ -38,6 +38,7 @@ const App = () => {
 
       {/* Footer */}
       <Footer/>
+
     </div>
   );
 };

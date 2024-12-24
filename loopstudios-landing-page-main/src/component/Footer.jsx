@@ -21,7 +21,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className='py-9 flex justify-center items-center flex-col'>
-        <div className='flex space-x-10 px-20 py-6'>
+        <div className='flex lg:space-x-10 space-x-5 px-20 py-6'>
           <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
             <img 
               src="/images/icon-facebook.svg" 

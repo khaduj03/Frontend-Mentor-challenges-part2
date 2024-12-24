@@ -1,12 +1,11 @@
 import React from 'react'
 import images from './imagesData'
 import ImageCart from './ImageCart'
-import ImagesCartMobile from './ImagesCartMobile'
 
 const Creations = () => {
 
   return (
-    <div className='flex flex-col justify-center items-center lg:px-28 px-6 pb-44'>
+    <div className='flex flex-col justify-center items-center lg:px-28 px-6 lg:pb-44'>
       <div className='flex flex-col lg:flex-row lg:justify-between justify-center items-center w-full py-20'>
         <h1 className='text-4xl py-5 lg:py-0 uppercase font-thin' id="creations-heading">
           Our Creations
@@ -15,7 +14,7 @@ const Creations = () => {
         <div className='grid grid-cols-1 gap-6 lg:hidden'>
         {images&& images.map((carts)=>(
           <div>
-            <ImagesCartMobile url={carts.imgMobile} name={carts.name}/>
+            <img src={carts.imgMobile} alt={carts.name} />
           </div>
         ))}
         </div>
