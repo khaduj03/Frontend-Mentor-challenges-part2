@@ -7,7 +7,7 @@ import Creations from "./component/Creations"
 const App = () => {
   
   return (
-    <div className="font-josefin justify-center flex flex-col">
+    <div className="font-josefin overflow-x-hidden justify-center flex flex-col">
      
   {/* Header */}
   <Header />
