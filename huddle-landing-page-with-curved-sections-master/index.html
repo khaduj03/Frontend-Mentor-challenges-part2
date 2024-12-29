@@ -5,77 +5,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
+  
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <meta name="description" content="Huddle landing page with curved section">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="form.js" defer></script>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Huddle" width="240" height="39">
+        </a>
 
-  <header>
-    <img src="/images/logo.svg" alt="logo" class="header-logo">
-    <button class="header-button"> Try it free</button>
+        <a href="#" class="btn header__cta">Try It Free</a>
+      </div>
+    </div>
   </header>
+
   <main>
-    <h1 class="main-head">Build The Community Your Fans Will Love</h1>
-    <p class="main-p"> Huddle re-imagines the way we build communities. You have a voice, but so does 
-      your audience. Create connections with your users as you engage in genuine discussion. </p>
-    <button class="main-button">Get Started For Free</button>
+    <section>
+      <div class="container">
+        <div class="hero__body slide-up-1">
+          <h1 class="hero__title">Build The Community Your Fans Will Love</h1>
+
+          <p class="hero__text">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+
+          <a href="#" class="btn btn__primary">Get Started For Free</a>
+        </div>
+
+        <img class="hero__image slide-up-2" src="images/screen-mockups.svg" alt="screen mockups" width="1035" height="739">
+
+        <div class="hero__stats slide-up-3">
+          <p>
+            <strong>
+              <img src="images/icon-communities.svg" alt="" width="47" height="41">
+              1.4k+
+            </strong>
+            <span>Communities Formed</span>
+          </p>
+
+          <p>
+            <strong>
+              <img src="images/icon-messages.svg" alt="" width="48" height="40">
+              2.7m+
+            </strong>
+            <span>Messages Sent</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-section-1">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img class="section__image" src="images/illustration-grow-together.svg" alt="illustration grow together" width="516" height="422">
+          </div>
+
+          <div class="col">
+            <div class="section__body">
+              <h2 class="section__title">Grow Together</h2>
+
+              <p class="section__text">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-section-2">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img class="section__image" src="images/illustration-flowing-conversation.svg" alt="illustration flowing conversation" width="516" height="367">
+          </div>
+
+          <div class="col">
+            <div class="section__body">
+              <h2 class="section__title">Flowing Conversations</h2>
+
+              <p class="section__text">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-section-3">
+      <div class="container">
+          <div class="row">
+            <div class="col">
+              <img class="section__image" src="images/illustration-your-users.svg" alt="illustration your users" width="516" height="389">
+            </div>
+
+            <div class="col">
+              <div class="section__body">
+                <h2 class="section__title">Your Users</h2>
+
+                <p class="section__text">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bg-4">
+      <div class="container">
+        <h2 class="section__title--lg">Ready To Build Your Community?</h2>
+
+        <a class="btn btn__primary" href="#">Get Started For Free</a>
+      </div>
+    </section>
   </main>
-  <section class="section-screen">
-    <img class="section-screen-mockups" src="images/screen-mockups.svg" alt="screen-mockups">
-  </section>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="footer__title">Newsletter</h3>
+          
+          <p class="footer__text">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
 
-  <!-- <p>
+          <form class="form js-form">
+            <label class="sr-only" for="email">Email</label>
+            <input type="text" name="email" id="email" class="form__control" placeholder="name@example.com">
+            <div class="form__msg js-form-msg" style="display: none;">Check your email please</div>
+            <button class="btn form__btn">Subscribe</button>
+          </form>
+        </div>
 
- 
+        <div class="col">
+          <img src="images/logo-light.svg" alt="Huddle" width="240" height="39" class="footer__logo">
 
-  
+          <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+          
+          <div>
+            <p class="footer__contact">
+              <img src="images/icon-phone.svg" alt="" width="18" height="18">
+              <span>Phone: <a href="tel:+15431234567">+1-543-123-4567</a></span>
+            </p>
+            
+            <p class="footer__contact">
+              <img src="images/icon-email.svg" alt="" width="20" height="16">
+              <a href="mailto:example@huddle.com">example@huddle.com</a>
+            </p>
+          </div>
 
-  1.4k+
-  Communities Formed
+          <ul class="footer__social">
+            <li><a href="#"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg><span class="sr-only">Facebook</span></a></li>
+            <li><a href="#"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg><span class="sr-only">Instagram</span></a></li>
+            <li><a href="#"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg><span class="sr-only">Twitter</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-  2.7m+
-  Messages Sent
-
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/bwalkermills">Byron</a>.
+    </div>
   </footer>
-</p> -->
 </body>
 </html>
