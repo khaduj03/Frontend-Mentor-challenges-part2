@@ -1,23 +1,30 @@
-import React from "react";
 import { motion } from "framer-motion";
+
+const Animate = ({ children, x }) => { 
+
+  return(
+  <motion.div
+    initial={{
+      opacity: 0,
+      x: x,
+    }}
+    whileInView={{
+      opacity: 1,
+      x: 0,
+    }}
+    transition={{ duration: 1.5 }}
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    {children}
+  </motion.div>
+);}
+
 
 const Features = () => {
   return (
     <div className="flex justify-center items-center w-full  bg-[#181f2b]">
       <div className="grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-4 lg:w-8/12   ">
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          exit={{
-            opacity: 0,
-            x: -100,
-          }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
+      <Animate x={-100}>
           <div className="flex flex-col justify-center h-64 p-2 items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-access-anywhere.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
@@ -30,20 +37,8 @@ const Features = () => {
               your account means your files follow you everywhere.
             </p>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{
-            opacity: 1, 
-            x: 0,
-          }}
-          exit={{
-            opacity: 0, 
-            x: 100, 
-          }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
+        </Animate>
+        <Animate x={100} >
           <div className="flex flex-col justify-center h-64 p-2  items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-security.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
@@ -57,20 +52,8 @@ const Features = () => {
               files.
             </p>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: -100 }} 
-          whileInView={{
-            opacity: 1,
-            x: 0, 
-          }}
-          exit={{
-            opacity: 0, 
-            x: -100, 
-          }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: false, amount: 0.2 }} 
-        >
+        </Animate>
+        <Animate x={-100}>
           <div className="flex flex-col justify-center h-64  items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-collaboration.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
@@ -83,20 +66,8 @@ const Features = () => {
               colleagues for live collaboration. No email attachments required.
             </p>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 100 }} 
-          whileInView={{
-            opacity: 1, 
-            x: 0, 
-          }}
-          exit={{
-            opacity: 0, 
-            x: 100, 
-          }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: false, amount: 0.2 }} 
-        >
+        </Animate>
+        <Animate x={100}>
           <div className="flex flex-col justify-center h-64  items-center w-[350px] lg:w-96 rounded-xl shadow-2xl  bg-[#181f2b] hover:bg-gray-800">
             <img src="/images/icon-any-file.svg" alt="file" />
             <p className="text-white text-2xl font-bold">
@@ -110,7 +81,7 @@ const Features = () => {
               shared.
             </p>
           </div>
-        </motion.div>
+        </Animate>
       </div>
     </div>
   );

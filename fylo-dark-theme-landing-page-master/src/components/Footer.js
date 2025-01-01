@@ -2,6 +2,24 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 
+
+const Animate=({children})=>(
+  <motion.div
+  initial={{ opacity: 0, y: 100 }} 
+  whileInView={{
+    opacity: 1, 
+    y: 0, 
+  }}
+  exit={{
+    opacity: 0, 
+    y: 0, 
+  }}
+  transition={{ duration: 2 }}
+  viewport={{ once: true, amount: 0.2 }}
+  className="flex justify-center items-center flex-col lg:absolute rounded-xl p-5  bg-[#202a3c]  w-[350px] lg:w-[750px] h-[320px] lg:h-[250px] lg:left-64 lg:bottom-64"
+>{children}</motion.div>
+)
+
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -29,20 +47,7 @@ const Footer = () => {
 
   return (
     <div className="w-full flex lg:flex-row justify-center items-center flex-col pb-20 pt-14 relative bg-gray-900 ">
-      <motion.div
-        initial={{ opacity: 0, y: 100 }} 
-        whileInView={{
-          opacity: 1, 
-          y: 0, 
-        }}
-        exit={{
-          opacity: 0, 
-          y: 0, 
-        }}
-        transition={{ duration: 2 }}
-        viewport={{ once: false, amount: 0.2 }}
-        className="flex justify-center items-center flex-col lg:absolute rounded-xl p-5  bg-[#202a3c]  w-[350px] lg:w-[750px] h-[320px] lg:h-[250px] lg:left-64 lg:bottom-64"
-      >
+      <Animate className="flex justify-center items-center flex-col lg:absolute rounded-xl p-5  bg-[#202a3c]  w-[350px] lg:w-[750px] h-[320px] lg:h-[250px] lg:left-64 lg:bottom-64">
         <p className=" text-white text-3xl font-bold lg:mt-0 mt-4">
           Get early access today
         </p>
@@ -76,7 +81,7 @@ const Footer = () => {
             </label>
           </form>
         </div>
-      </motion.div>
+      </Animate>
 
       <div
         className="flex flex-col lg:mt-0 mt-10 "

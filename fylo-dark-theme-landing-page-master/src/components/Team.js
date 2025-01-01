@@ -1,43 +1,55 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
+const Animate=({children})=>(
+  <motion.div
+  className="lg:w-1/2 p-8"
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+  }}
+  exit={{
+    opacity: 0,
+    y: 100,
+  }}
+  transition={{ duration: 2 }}
+  viewport={{ once: true, amount: 0.2 }}
+>{children}</motion.div>
+)
+
+
+const AnimateTeamCard=({children})=>(
+  <motion.div
+  initial={{
+    opacity: 0,
+    scale: 0.5,
+  }}
+  whileInView={{
+    opacity: 1,
+    scale: 1,
+  }}
+  exit={{
+    opacity: 0,
+    scale: 0.5,
+  }}
+  transition={{ duration: 1 }}
+  viewport={{ once: true, amount: 0.2 }}
+  className="lg:w-[380px] w-[320px] z-20 p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
+>{children}</motion.div>
+)
 const Team = () => {
   return (
     <div className="bg-[#181f2b]  lg:pb-96">
       <div className="w-full flex lg:flex-row flex-col p-14 ">
-        <motion.div
-          className="lg:w-1/2 p-8"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          exit={{
-            opacity: 0,
-            y: 100,
-          }}
-          transition={{ duration: 2 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
+        <Animate>
           <img
             src="/images/illustration-stay-productive.png"
             alt="illustration-stay-productive"
           />
-        </motion.div>
-        <motion.div
-          className="flex flex-col  lg:w-1/2 p-8 lg:mt-10"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          exit={{
-            opacity: 0,
-            y: 100,
-          }}
-          transition={{ duration: 2 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
+        </Animate>
+        <Animate>
           <h2 className="text-white lg:text-4xl font-bold">
             {" "}
             Stay productive,
@@ -60,7 +72,7 @@ const Team = () => {
               <img src="/images/icon-arrow.svg" alt="" />
             </span>
           </a>
-        </motion.div>
+        </Animate>
       </div>
 
       <div className="flex lg:flex-row flex-col  relative justify-center items-center space-y-2  lg:space-x-7">
@@ -69,18 +81,8 @@ const Team = () => {
           src="/images/bg-quotes.png"
           alt=""
         />
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{
-            opacity: 1,
-            scale: 1,
-          }}
-          exit={{
-            opacity: 0,
-            scale: 0.5,
-          }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false, amount: 0.2 }}
+        <AnimateTeamCard
+
           className="lg:w-[380px] w-[320px] z-20 p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
         >
           <p>
@@ -99,19 +101,9 @@ const Team = () => {
               <p> Founder & CEO, Huddle</p>
             </div>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{
-            opacity: 1,
-            scale: 1,
-          }}
-          exit={{
-            opacity: 0,
-            scale: 0.5,
-          }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false, amount: 0.2 }}
+        </AnimateTeamCard>
+        <AnimateTeamCard
+        
           className="lg:w-[380px] w-[320px] z-20  p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
         >
           <p>
@@ -130,19 +122,8 @@ const Team = () => {
               <p> Founder & CEO, Huddle</p>
             </div>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{
-            opacity: 1,
-            scale: 1,
-          }}
-          exit={{
-            opacity: 0,
-            scale: 0.5,
-          }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false, amount: 0.2 }}
+        </AnimateTeamCard>
+        <AnimateTeamCard
           className="lg:w-[380px] w-[320px] z-20 p-5 h-44 rounded-md flex justify-center flex-col text-white bg-[#202a3c]"
         >
           <p>
@@ -161,7 +142,7 @@ const Team = () => {
               <p> Founder & CEO, Huddle</p>
             </div>
           </div>
-        </motion.div>
+        </AnimateTeamCard>
       </div>
     </div>
   );
