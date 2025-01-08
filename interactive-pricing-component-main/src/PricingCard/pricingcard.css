@@ -1,0 +1,41 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #ddd; /* Track color */
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px; /* Width of the thumb */
+    height: 40px; /* Height of the thumb */
+    background: url('../assets/images/icon-slider.svg') no-repeat center center; /* Replace with your image */
+    background-size: contain; /* Ensure the image fits */
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/images/icon-slider.svg')  no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/images/icon-slider.svg') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+  }
+  
